@@ -1,0 +1,7 @@
+git clone https://github.com/electron/electron-tailwind
+npm install
+npm run start
+
+electron-builder --linux
+electron-builder --mac
+electron-builder --win
