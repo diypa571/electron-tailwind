@@ -2,7 +2,7 @@
 2- npm install
 3- npm run start
 
-Start for buld for win,linux and mac.
+Start for build for win,linux and mac.
 electron-builder --linux
 electron-builder --mac
 electron-builder --win
