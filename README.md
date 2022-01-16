@@ -4,6 +4,7 @@
 #   2- npm install
 #   3- npm run start
 
+# Sudo -s //
 # Start for build for win,linux and mac.
 # electron-builder --linux
 # electron-builder --mac
