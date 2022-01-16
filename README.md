@@ -1,6 +1,6 @@
 # electron-tailwind
 
-#1- git clone https://github.com/diypa571/electron-tailwind
+#   1- git clone https://github.com/diypa571/electron-tailwind
 #   2- npm install
 #   3- npm run start
 
