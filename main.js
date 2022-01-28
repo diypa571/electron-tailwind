@@ -17,8 +17,8 @@ Menu.setApplicationMenu(
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    minWidth: parseInt(1500),
-    minHeight: parseInt(900),
+    minWidth: parseInt(600),
+    minHeight: parseInt(600),
 
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),

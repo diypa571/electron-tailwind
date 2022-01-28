@@ -1,31 +1,116 @@
+<!-- 
+https://github.com/diypa571/electron-tailwind
+     -->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./src/css/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./src/css/tailwind.min.css" rel="stylesheet" />
     <title>Test</title>
   </head>
   <body>
-
-
     <!-- This is an example component -->
-    <div class="max-w-2xl mx-auto mt-10">
 
-    	<div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-    		<div class="flex   px-4 pt-4">
-<br>
-    <h1>TEST</h1><br>
+    <style>
+      .accordion {
+        width: 100%;
+      }
 
-    </div>    </div>
+      .panel {
+        display: none;
+        overflow: hidden;
+      }
+    </style>
+    <div
+      class="flex max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto"
+    >
+      <div class="bg-blue-200 mx-auto my-2">
+        <h2 class="bg-dark-800 p-4 text-center font-black">Accordion</h2>
+        <button
+          class="border-solid border-4 border-light-blue-500 text-left accordion p-4 font-black bg-yellow-500 hover:bg-red-700 focus:bg-red-700 rounded-sm"
+        >
+          Section 1
+        </button>
+        <div class="panel bg-blue-100 p-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
 
+        <button
+          class="border-solid border-4 border-light-blue-500 text-left accordion p-4 font-black bg-yellow-500 hover:bg-red-700 focus:bg-red-700 rounded-sm"
+        >
+          Section 2
+        </button>
+        <div class="panel bg-blue-100 p-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
 
+        <button
+          class="border-solid border-4 border-light-blue-500 text-left accordion p-4 font-black bg-yellow-500 hover:bg-red-700 focus:bg-red-700 rounded-sm"
+        >
+          Section 3
+        </button>
+        <div class="panel bg-blue-100 p-4">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <div class="mx-auto">
+      <!--Gallery 1-->
+      <!--Responsive grid-->
+      <div class="mx-auto px-2 my-1">
+        <h2 class="text-4xl bg-gray-700 p-4 rounded-sm text-white text-center">
+          GALLERY
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+          <div
+            class="flex justify-center text-6xl border-1 border-gray-300 rounded-sm p-2 bg-gray-500 hover:bg-red-700"
+          >
+            <img
+              class="w-full rounded-sm bg-red-500"
+              src="./src/icons/icon.png"
+            />
+          </div>
+          <div
+            class="flex justify-center text-6xl border-1 border-gray-300 rounded-sm p-2 bg-gray-500 hover:bg-red-700"
+          >
+            <img class="w-full rounded-sm" src="./src/icons/icon.png" />
+          </div>
+          <div
+            class="flex justify-center text-6xl border-1 border-gray-300 rounded-sm p-2 bg-gray-500 hover:bg-red-700"
+          >
+            <img class="w-full rounded-sm" src="./src/icons/icon.png" />
+          </div>
+          <div
+            class="flex justify-center text-6xl border-1 border-gray-300 rounded-sm p-2 bg-gray-500 hover:bg-red-700"
+          >
+            <img class="w-full rounded-sm" src="./src/icons/icon.png" />
+          </div>
+        </div>
+      </div>
+      <!--/Gallery 1-->
+    </div>
 
-
- 
-
+    <script src="./src/js/script.js"></script>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
